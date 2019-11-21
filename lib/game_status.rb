@@ -33,3 +33,7 @@ def won?(board)
   }
       return false
   end
+
+  def full?(board)
+    board.all?{|taken| taken == "X" || taken == "O"}
+  end
